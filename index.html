@@ -3,187 +3,230 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>你的品牌｜介紹型網站</title>
-  <meta name="description" content="一個簡潔的介紹型網站：主打特色、服務內容、作品展示與聯絡方式。" />
+  <title>LaPO 行動電源｜你的日常電力，由此開始</title>
+  <meta name="description" content="LaPO 行動電源：輕巧、速充、安全、大容量。八合一無線快充、10N 磁吸、Apple Watch 直充、PD/QC 20W、37Wh 可登機。" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="#top">你的品牌</a>
+      <a class="brand" href="#top" aria-label="LaPO">
+        <span class="brand-mark"></span>
+        <span class="brand-name">LaPO</span>
+      </a>
 
-      <nav class="nav">
+      <nav class="nav" aria-label="主選單">
         <a href="#features">特色</a>
-        <a href="#services">服務</a>
-        <a href="#gallery">展示</a>
-        <a href="#contact" class="nav-cta">聯絡</a>
+        <a href="#specs">規格</a>
+        <a href="#about">品牌</a>
+        <a href="#contact" class="btn btn-small btn-primary">立即洽談</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
-    <!-- Hero -->
+    <!-- HERO -->
     <section class="hero">
-      <div class="container hero-inner">
+      <div class="container hero-grid">
         <div class="hero-text">
-          <p class="badge">介紹型網站｜路線 B（HTML + CSS）</p>
-          <h1>把你的理念，用一個乾淨的網站說清楚。</h1>
-          <p class="sub">
-            這是一個新手友善的單頁式版型：特色、服務、展示、聯絡一次到位。
-            你可以直接改字、換圖、馬上上線。
+          <p class="eyebrow">行動電源｜輕巧．速充．安全．大容量</p>
+          <h1>你的日常電力，由此開始。</h1>
+          <p class="subtitle">
+            全方位行充：八合一無線快充、磁吸對位、Apple Watch 直充、
+            PD/QC 快充與多國安全認證，讓每一次補電都可靠、俐落、好看。
           </p>
 
-          <div class="hero-actions">
-            <a class="btn primary" href="#contact">立即聯絡</a>
-            <a class="btn" href="#features">看特色</a>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contact">取得報價 / 合作洽談</a>
+            <a class="btn btn-ghost" href="#features">查看核心特色</a>
           </div>
 
-          <div class="meta">
-            <div class="meta-item">
-              <span class="meta-k">上線時間</span>
-              <span class="meta-v">10 分鐘內</span>
+          <div class="kpi">
+            <div class="kpi-item">
+              <div class="kpi-k">額定容量</div>
+              <div class="kpi-v">6750mAh</div>
             </div>
-            <div class="meta-item">
-              <span class="meta-k">適合</span>
-              <span class="meta-v">品牌/社團/專題/活動</span>
+            <div class="kpi-item">
+              <div class="kpi-k">快充輸出</div>
+              <div class="kpi-v">最高 20W</div>
             </div>
-            <div class="meta-item">
-              <span class="meta-k">成本</span>
-              <span class="meta-v">免費（GitHub Pages）</span>
+            <div class="kpi-item">
+              <div class="kpi-k">登機能量</div>
+              <div class="kpi-v">37Wh</div>
             </div>
           </div>
         </div>
 
-        <div class="hero-card">
-          <div class="card">
-            <h3>你可以放這裡：</h3>
-            <ul>
-              <li>一句主打標語</li>
-              <li>三個亮點特色</li>
-              <li>服務內容與流程</li>
-              <li>作品/照片/活動紀錄</li>
-              <li>聯絡方式或表單連結</li>
-            </ul>
-            <p class="hint">小技巧：先把「字」補齊，再慢慢換成你的圖片。</p>
+        <div class="hero-media">
+          <div class="media-card">
+            <img src="lapo-product.png" alt="LaPO 行動電源產品示意" class="product-img" />
+            <div class="media-badges">
+              <span class="pill">八合一無線快充</span>
+              <span class="pill">10N 磁吸對位</span>
+              <span class="pill">Apple Watch 直充</span>
+            </div>
           </div>
+          <p class="media-note">提示：若圖片未顯示，請確認已上傳 lapo-product.png（與 index.html 同層）。</p>
         </div>
       </div>
     </section>
 
-    <!-- Features -->
+    <!-- FEATURES -->
     <section id="features" class="section">
       <div class="container">
-        <h2>三個特色</h2>
-        <p class="lead">用最少字，說出最重要的價值。</p>
+        <div class="section-head">
+          <h2>核心特色</h2>
+          <p class="lead">把「好用」做得更漂亮；把「高規格」做得更安心。</p>
+        </div>
 
         <div class="grid3">
-          <div class="box">
-            <h3>清楚</h3>
-            <p>訪客 10 秒內知道你是誰、你提供什麼、怎麼聯絡你。</p>
+          <div class="card">
+            <h3>高質感外觀</h3>
+            <p>特製奈米漆與金屬烤漆質感，外觀更精緻耐看。</p>
           </div>
-          <div class="box">
-            <h3>可信</h3>
-            <p>用流程、展示與成果，讓人放心把需求交給你。</p>
+          <div class="card">
+            <h3>多裝置整合</h3>
+            <p>內建 2 合 1 無線充電圈模組；磁吸對位升級至 10N。</p>
           </div>
-          <div class="box">
-            <h3>可擴充</h3>
-            <p>之後要加更多頁、部落格、表單、甚至後端都可以升級。</p>
+          <div class="card">
+            <h3>Apple Watch 直充</h3>
+            <p>可直接充 Apple Watch 無需配件（適用 WatchOS 9 以上）。</p>
+          </div>
+        </div>
+
+        <div class="feature-wide">
+          <div class="wide-left">
+            <h3>雙自帶線，出門更乾淨</h3>
+            <p>18.5cm 雙自帶線（Type-C / Lightning 各一），滿足多種充電需求；並通過 SGS 10 萬次彎折/搖擺測試。</p>
+          </div>
+          <div class="wide-right">
+            <ul class="checklist">
+              <li><span class="check">✓</span> 八合一無線快充行動電源</li>
+              <li><span class="check">✓</span> LaPO 訂製電芯（額定容量 6750mAh）</li>
+              <li><span class="check">✓</span> 磁吸對位 10N、無線快充整合</li>
+              <li><span class="check">✓</span> Apple Watch 直充（WatchOS 9+）</li>
+              <li><span class="check">✓</span> 18.5cm 雙自帶線、SGS 高規測試</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Services -->
-    <section id="services" class="section alt">
+    <!-- SPECS -->
+    <section id="specs" class="section alt">
       <div class="container">
-        <h2>服務內容</h2>
-        <p class="lead">把你的服務或專題內容用「三步驟」講清楚。</p>
+        <div class="section-head">
+          <h2>規格與安全</h2>
+          <p class="lead">商用級安全思維：快充效率、溫控管理、多國認證一次到位。</p>
+        </div>
 
         <div class="grid3">
-          <div class="box">
-            <p class="step">STEP 1</p>
-            <h3>需求確認</h3>
-            <p>一句話描述你怎麼理解客戶/觀眾/使用者的需求。</p>
+          <div class="card">
+            <h3>快充協議</h3>
+            <p>USB-A / USB-C 支援 PD/QC 協議，最高 20W 快速充電。</p>
           </div>
-          <div class="box">
-            <p class="step">STEP 2</p>
-            <h3>方案與執行</h3>
-            <p>列出你會做的事：設計、開發、測試、交付或活動流程。</p>
+          <div class="card">
+            <h3>智慧溫控</h3>
+            <p>搭載智慧溫控管理晶片，提升穩定與安全。</p>
           </div>
-          <div class="box">
-            <p class="step">STEP 3</p>
-            <h3>交付與支援</h3>
-            <p>交付內容是什麼？多久？後續怎麼維護或更新？</p>
+          <div class="card">
+            <h3>認證與登機</h3>
+            <p>通過 BSMI/NCC，部分產品符合 CE/FCC；37Wh 可攜帶登機。</p>
+          </div>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>全球電壓與回充效率</h3>
+            <p>通用 100V–240V 全球電壓；AC 插頭充電效率升級，約 4–4.5 小時可回充飽電。</p>
+          </div>
+          <div class="card">
+            <h3>貼心細節</h3>
+            <p>隱藏式手機支架，兩段式推出設計，追劇/視訊更方便。</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Gallery -->
-    <section id="gallery" class="section">
+    <!-- ABOUT -->
+    <section id="about" class="section">
       <div class="container">
-        <h2>展示區</h2>
-        <p class="lead">先用佔位卡片，之後再換成圖片或連結。</p>
+        <div class="section-head">
+          <h2>品牌背景與製造模式</h2>
+          <p class="lead">不是單純貼牌：以設計與品質監控為核心，建立跨地區協力製造體系。</p>
+        </div>
 
-        <div class="grid3">
-          <a class="tile" href="#" aria-label="展示項目 1">
-            <div class="tile-img"></div>
-            <div class="tile-body">
-              <h3>展示項目 1</h3>
-              <p>一句話說明內容亮點。</p>
-            </div>
-          </a>
-          <a class="tile" href="#" aria-label="展示項目 2">
-            <div class="tile-img"></div>
-            <div class="tile-body">
-              <h3>展示項目 2</h3>
-              <p>一句話說明內容亮點。</p>
-            </div>
-          </a>
-          <a class="tile" href="#" aria-label="展示項目 3">
-            <div class="tile-img"></div>
-            <div class="tile-body">
-              <h3>展示項目 3</h3>
-              <p>一句話說明內容亮點。</p>
-            </div>
-          </a>
+        <div class="grid2">
+          <div class="card">
+            <h3>品牌背景</h3>
+            <p>LaPO 為資詠科技（Windtac Technology）旗下品牌，自 2000 年 6 月創立以來，深耕行動電源與充電技術領域。</p>
+          </div>
+          <div class="card">
+            <h3>自家設計 × 合作製造</h3>
+            <p>由台灣團隊主導設計、開發與品質監控，並與關係企業（台灣駿雅科技、中國東莞喬新電子）合作生產與組裝，平衡創新、品管與效率。</p>
+          </div>
+        </div>
+
+        <div class="card callout">
+          <h3>為行動生活而生</h3>
+          <p>
+            從行動電源、充電器到生活型配件，LaPO 以「多裝置整合 × 行動便利 × 使用安全」為核心，
+            致力成為使用者的行動生活夥伴。
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- CONTACT -->
     <section id="contact" class="section alt">
       <div class="container">
-        <h2>聯絡我</h2>
-        <p class="lead">先用 Email / 社群連結就夠了（之後可再加表單）。</p>
-
-        <div class="contact-card">
-          <div class="contact-item">
-            <span class="label">Email</span>
-            <a href="mailto:you@example.com">you@example.com</a>
-          </div>
-          <div class="contact-item">
-            <span class="label">Instagram</span>
-            <a href="#">@your_account</a>
-          </div>
-          <div class="contact-item">
-            <span class="label">Facebook</span>
-            <a href="#">你的粉專連結</a>
-          </div>
+        <div class="section-head">
+          <h2>聯絡與合作</h2>
+          <p class="lead">把聯絡資訊換成你的 Email / LINE / 表單連結即可。</p>
         </div>
 
-        <p class="small">
-          想要「聯絡表單」：可用 Google 表單，貼連結即可。
-        </p>
+        <div class="contact">
+          <div class="card">
+            <h3>快速洽談</h3>
+            <div class="contact-row">
+              <span class="label">Email</span>
+              <a href="mailto:you@example.com">you@example.com</a>
+            </div>
+            <div class="contact-row">
+              <span class="label">LINE</span>
+              <a href="#">@your_line</a>
+            </div>
+            <div class="contact-row">
+              <span class="label">表單</span>
+              <a href="#">Google 表單連結</a>
+            </div>
+
+            <div class="contact-cta">
+              <a class="btn btn-primary" href="mailto:you@example.com">寄信洽談</a>
+              <a class="btn btn-ghost" href="#specs">看規格</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>你可以放在這裡的內容</h3>
+            <ul class="bullet">
+              <li>產品型號：LaPO 10000 / 20000</li>
+              <li>目標客群：零售 / 企業採購 / 通路合作</li>
+              <li>保固/售後/配送（如有）</li>
+              <li>更多產品圖、情境圖（通勤/旅行/辦公）</li>
+            </ul>
+            <p class="note">想要更像「品牌官網」：再補 3–6 張情境圖，質感會直接翻倍。</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> 你的品牌. All rights reserved.</p>
-      <a href="#top">回到頂部 ↑</a>
+      <p>© <span id="year"></span> LaPO. All rights reserved.</p>
+      <a href="#top" class="toplink">回到頂部 ↑</a>
     </div>
   </footer>
 
